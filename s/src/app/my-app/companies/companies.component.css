@@ -1,0 +1,17 @@
+a {
+  color: inherit; /* Inherit the text color from the parent element */
+  text-decoration: none; /* Remove the underline */
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content {
+  flex: 1;
+}
+
+.button-container {
+  margin-right: 15px; /* Adjust this value for spacing */
+}
