@@ -9,7 +9,13 @@ import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './my-app/layouts/admin-layout/admin-layout.component';
 import { LogoutComponent } from './my-app/logout/logout.component';
 import { UserListComponent } from './my-app/user-list/user-list.component';
-import { AboutUsComponent } from './my-app/about-us/about-us.component';
+import { ConfirmationDialogComponent } from './my-app/companies/confirmation-dialog/confirmation-dialog.component';
+import {MatDialogModule} from "@angular/material/dialog";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatButtonModule} from "@angular/material/button";
+
+
+
 
 @NgModule({
   imports: [
@@ -20,14 +26,16 @@ import { AboutUsComponent } from './my-app/about-us/about-us.component';
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatButtonModule
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
     LogoutComponent,
     UserListComponent,
-    AboutUsComponent,
-
+    ConfirmationDialogComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

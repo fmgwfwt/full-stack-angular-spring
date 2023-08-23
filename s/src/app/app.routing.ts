@@ -4,7 +4,8 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AdminLayoutComponent } from './my-app/layouts/admin-layout/admin-layout.component';
-import {LoginComponent} from "./login/login/login.component";
+import {LoginComponent} from "./login/login-register/login/login.component";
+import {UpdateCompanyComponent} from "./my-app/companies/update-company/update-company.component";
 
 const routes: Routes =[
   {
@@ -22,7 +23,10 @@ const routes: Routes =[
       path: '',
       loadChildren: () => import('./my-app/layouts/admin-layout/admin-layout.module').then(m => m.AdminLayoutModule)
     }]
-  }
+  },
+
+
+
 ];
 
 @NgModule({
