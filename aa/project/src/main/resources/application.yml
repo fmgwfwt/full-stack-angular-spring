@@ -1,6 +1,0 @@
-# Spring Boot configuration
-spring:
-  profiles:
-    active: dev
-  # Security configuration
-  # Database
