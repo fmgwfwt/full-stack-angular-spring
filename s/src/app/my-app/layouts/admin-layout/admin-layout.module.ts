@@ -16,16 +16,19 @@ import {MatRippleModule} from '@angular/material/core';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSelectModule} from '@angular/material/select';
-import {BoardModeratorComponent} from "../../../login/board-moderator/board-moderator.component";
-import {LoginComponent} from "../../../login/login/login.component";
-import {BoardAdminComponent} from "../../../login/board-admin/board-admin.component";
-import {BoardUserComponent} from "../../../login/board-user/board-user.component";
-import {RegisterComponent} from "../../../login/register/register.component";
-import {HomeComponent} from "../../../login/home/home.component";
+import {BoardModeratorComponent} from "../../../login/board/board-moderator/board-moderator.component";
+import {LoginComponent} from "../../../login/login-register/login/login.component";
+import {BoardAdminComponent} from "../../../login/board/board-admin/board-admin.component";
+import {BoardUserComponent} from "../../../login/board/board-user/board-user.component";
+import {RegisterComponent} from "../../../login/login-register/register/register.component";
+import {HomeComponent} from "../../../login/board/home/home.component";
 import {ProfileComponent} from "../../../login/profile/profile.component";
 import {CompaniesComponent} from "../../companies/companies.component";
 import {JobsComponent} from "../../jobs/jobs.component";
 import {AboutUsComponent} from "../../about-us/about-us.component";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {UpdateCompanyComponent} from "../../companies/update-company/update-company.component";
+import {AddCompanyComponent} from "../../companies/add-company/add-company.component";
 
 @NgModule({
   imports: [
@@ -39,6 +42,7 @@ import {AboutUsComponent} from "../../about-us/about-us.component";
     MatInputModule,
     MatSelectModule,
     MatTooltipModule,
+    MatPaginatorModule,
   ],
   declarations: [
     DashboardComponent,
@@ -58,6 +62,8 @@ import {AboutUsComponent} from "../../about-us/about-us.component";
     CompaniesComponent,
     JobsComponent,
     AboutUsComponent,
+    UpdateCompanyComponent,
+    AddCompanyComponent,
   ]
 })
 

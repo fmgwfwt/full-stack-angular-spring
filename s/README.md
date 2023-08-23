@@ -149,10 +149,10 @@ material-dashboard-angular
 │   │   │   ├── upgrade.component.spec.ts
 │   │   │   └── upgrade.component.ts
 │   │   └── user-profile
-│   │       ├── user-profile.component.css
-│   │       ├── user-profile.component.html
-│   │       ├── user-profile.component.spec.ts
-│   │       └── user-profile.component.ts
+│   │       ├── add-company.component.css
+│   │       ├── add-company.component.html
+│   │       ├── add-company.component.spec.ts
+│   │       └── add-company.component.ts
 │   ├── assets
 │   │   ├── css
 │   │   │   └── demo.css

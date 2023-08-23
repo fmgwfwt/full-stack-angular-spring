@@ -7,16 +7,18 @@ import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
-import { BoardAdminComponent} from "../../../login/board-admin/board-admin.component";
-import {BoardUserComponent} from "../../../login/board-user/board-user.component";
-import {RegisterComponent} from "../../../login/register/register.component";
-import {LoginComponent} from "../../../login/login/login.component";
-import {HomeComponent} from "../../../login/home/home.component";
-import {BoardModeratorComponent} from "../../../login/board-moderator/board-moderator.component";
+import { BoardAdminComponent} from "../../../login/board/board-admin/board-admin.component";
+import {BoardUserComponent} from "../../../login/board/board-user/board-user.component";
+import {RegisterComponent} from "../../../login/login-register/register/register.component";
+import {LoginComponent} from "../../../login/login-register/login/login.component";
+import {HomeComponent} from "../../../login/board/home/home.component";
+import {BoardModeratorComponent} from "../../../login/board/board-moderator/board-moderator.component";
 import {CompaniesComponent} from "../../companies/companies.component";
 import {JobsComponent} from "../../jobs/jobs.component";
 import {UserListComponent} from "../../user-list/user-list.component";
 import {AboutUsComponent} from "../../about-us/about-us.component";
+import {UpdateCompanyComponent} from "../../companies/update-company/update-company.component";
+import {AddCompanyComponent} from "../../companies/add-company/add-company.component";
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -28,7 +30,7 @@ export const AdminLayoutRoutes: Routes = [
     // path: '',
     // children: [ {
     //   path: 'userprofile',
-    //   component: UserProfileComponent
+    //   component: AddCompanyComponent
     // }]
     // }, {
     //   path: '',
@@ -80,4 +82,6 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'login', component: LoginComponent},
     { path: 'user-list', component: UserListComponent},
     { path: 'about-us', component: AboutUsComponent},
+    { path: 'update-company/:id', component: UpdateCompanyComponent },
+    { path: 'add-company', component: AddCompanyComponent},
 ];
