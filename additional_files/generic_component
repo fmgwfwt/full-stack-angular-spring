@@ -1,3 +1,5 @@
+In here I will first share some information about generic components then directives in angular. 
+
 @Component({
   selector: "app-item-list",
   templateUrl: "./item-list.component.html",
