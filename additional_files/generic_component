@@ -1,7 +1,118 @@
+@Component({
+  selector: "app-item-list",
+  templateUrl: "./item-list.component.html",
+  styleUrls: ["./item-list.component.scss"],
+})
+export class ItemListComponent {
+  @Input()
+  items: Item[] = [];
+} 
+this is our component and we can use it with different types that extend the Item type
+
+export interface Item {
+  label: string;
+}
+
+export interface ItemA extends Item {
+  valueA: number;
+}
+
+export interface ItemB extends Item {
+  valueB: string;
+}
+
+we can use it in hmtl files
+
+<div *ngFor="let item of items">
+  <div>{{ item.label }}</div>
+</div> 
+
+<app-item-list [items]="itemsA"></app-item-list>
+<hr />
+<app-item-list [items]="itemsB"></app-item-list>
+
+emitting 
+
+@Output()
+itemClick: EventEmitter<Item> = new EventEmitter<Item>();
+
+<div *ngFor="let item of items">
+  <div (click)="itemClick.emit(item)">{{ item.label }}</div>
+</div>
+
+<app-item-list
+  [items]="itemsA"
+  (itemClick)="itemClickA($event)"
+></app-item-list>
+
+itemA?: ItemA;
+
+itemClickA(item: ItemA) {
+  this.itemA = item;
+}
+
+this will give compile error because compiler doesn't know that item is a type itemA we can solve this issue like
+
+itemClickA(item: Item) {
+  this.itemA = item as ItemA;
+}
+
+this says that item is of type ItemA but that may not be the case.
+
+### Generic components solutions to the problem
+
+#########################################################################################################################################################################################
+#########################################################################################################################################################################################
+#########################################################################################################################################################################################
+
+@Component({
+  template: "",
+})
+export abstract class ItemListComponent<T extends Item> {
+  @Input()
+  items: T[] = [];
+
+  @Output()
+  itemClick: EventEmitter<T> = new EventEmitter<T>();
+}
+
+@Component({
+  selector: "app-itema-list",
+  templateUrl: "./item-list.component.html",
+  styleUrls: ["./item-list.component.scss"],
+})
+export class ItemAListComponent extends ItemListComponent<ItemA> {}
+
+@Component({
+  selector: "app-itemb-list",
+  templateUrl: "./item-list.component.html",
+  styleUrls: ["./item-list.component.scss"],
+})
+export class ItemBListComponent extends ItemListComponent<ItemB> {}
+
 Generic components work in angular through inference let’s deep dive into it with an example 
 @Component({
     selector: 'ag-grid-angular',
 })
+
+<app-itema-list
+  [items]="itemsA"
+  (itemClick)="itemClickA($event)"
+></app-itema-list>
+<hr />
+<app-itemb-list
+  [items]="itemsB"
+  (itemClick)="itemClickB($event)"
+></app-itemb-list>
+
+we can reuse the same template and styles. Only the selector needs to be different so we can choose which component we want to consume
+
+#########################################################################################################################################################################################
+#########################################################################################################################################################################################
+#########################################################################################################################################################################################
+
+Another example
+
 export class AgGridAngular<TData = any> {
 
     @Input() rowData?: TData[];
@@ -34,3 +145,92 @@ rowData$: Observable<ICar[]>;
 onRowSelected(e: RowSelectedEvent<ICar>): void {}
 now you do not need to explicitly define defaultColDef because you enforced it with ColDef<TData>;
 
+#########################################################################################################################################################################################
+#########################################################################################################################################################################################
+#########################################################################################################################################################################################
+
+Directives in angular is like components without templates
+
+import { Directive, ElementRef, Input, OnInit } from '@angular/core';
+ 
+@Directive({
+  selector: '[appColor]'
+})
+export class ColorDirective implements OnInit {
+  @Input() appColor: string;
+ 
+  constructor(private el: ElementRef) { }
+ 
+  ngOnInit(){
+    this.el.nativeElement.style.backgroundColor = this.appColor;
+  }
+}
+
+For example this is a directive and I want to use it in my app.component.ts
+
+import { Component } from '@angular/core';
+
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: [ './app.component.css' ]
+})
+export class AppComponent  {
+  title = 'Color Directive Implementation';
+  greenColor = 'green';
+  redColor = 'red';
+}
+
+<div style="text-align:center">
+
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+ <p [appColor]= "'green'">Show me Green Color</p>
+ <p [appColor]= "'red'">Show me Red Color</p>
+</div>
+
+because the selector is appColor I can change the color 	
+
+#########################################################################################################################################################################################
+#########################################################################################################################################################################################
+#########################################################################################################################################################################################
+
+Directives are what the Open-Closed Principle is about. The component is closed for modifications, but a directive allows you to extend the component without changing the internals.
+For example, with directives, we can change the behavior of 3rd party libraries or an in-house component library without having access to the code of the component.
+
+<p-calendar
+  [(ngModel)]="date"
+  required
+  id="date"
+  name="date"
+  dateFormat="dd/mm/yy"
+  [showIcon]="true"
+  [showButtonBar]="true"
+  [monthNavigator]="true"
+  [yearNavigator]="true"
+  yearRange="1900:2050"
+  [firstDayOfWeek]="1"
+>
+</p-calendar>
+
+<p-calendar [(ngModel)]="date" required id="date" name="date"></p-calendar>
+
+import { Directive } from '@angular/core';
+import { Calendar } from 'primeng/calendar';
+ 
+@Directive({
+    selector: 'p-calendar',
+})
+export class CalenderDirective {
+    constructor(private calendar: Calendar) {
+        this.calendar.dateFormat = 'dd/mm/yy';
+        this.calendar.showIcon = true;
+        this.calendar.showButtonBar = true;
+        this.calendar.monthNavigator = true;
+        this.calendar.yearNavigator = true;
+        this.calendar.yearRange = '1900:2050';
+        this.calendar.firstDayOfWeek = 1;
+    }
+}
