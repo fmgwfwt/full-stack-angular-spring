@@ -1,1 +1,36 @@
+Generic components work in angular through inference let’s deep dive into it with an example 
+@Component({
+    selector: 'ag-grid-angular',
+})
+export class AgGridAngular<TData = any> {
+
+    @Input() rowData?: TData[];
+    @Input() columnDefs?: ColDef<TData>[];
+    @Input() defaultColDef?: ColDef<TData>;
+    @Output() rowSelected: EventEmitter<RowSelectedEvent<TData>> = new EventEmitter<RowSelectedEvent<TData>>();
+}
+This is a component, <TData> is similar to the templates in c++ it allows you to put different type of data between for the place of <TData>.  Hence, the component will be reusable. 
+
+Let’s say I have a car data type and want to use it with our generic component;
+
+carData: Icar[];
+defaultColDef: Coldef;
+
+<ag-grid-angular
+	[rowData]=”carData”
+	[defaultColDef]=”defaultColDef”>
+</ag-grid-angular>
+
+I make this in order to angular infer that I want to bind rowData to carData and defaultColDef to defaultColDef. However there is an error in the code which is I did not specify the type of defaultColDef: Coldef therefore the type will be inferred as any which is we don’t want. There are two solutions two this:
+1 – Correct the line defaultColDef: Coldef<Icar>[];
+
+2 – You can enforce by providing an default type; 
+like interace ColDef<TData = any>{} instead of you need to make interface ColDef<TData> {};
+
+
+columnDefs: ColDef<ICar>[];
+defaultColDef: ColDef;
+rowData$: Observable<ICar[]>;
+onRowSelected(e: RowSelectedEvent<ICar>): void {}
+now you do not need to explicitly define defaultColDef because you enforced it with ColDef<TData>;
 
