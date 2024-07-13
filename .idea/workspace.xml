@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a9a66a5-c0d7-4ce0-8a01-fcba69f75371" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/backend/project/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/project/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.routing.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/login/login-register/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/login/login-register/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/login/login-register/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/login/login-register/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/login/login-register/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/login/login-register/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/login/login-register/register/register.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/login/login-register/register/register.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/login/login-register/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/login/login-register/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/login/login-register/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/login/login-register/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/model/response.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/model/response.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-app/jobs/jobs.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-app/jobs/jobs.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-app/jobs/jobs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-app/jobs/jobs.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-app/jobs/jobs.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-app/jobs/jobs.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +90,7 @@
       <workItem from="1720696446636" duration="1341000" />
       <workItem from="1720708262439" duration="735000" />
       <workItem from="1720709066281" duration="77000" />
-      <workItem from="1720878658673" duration="651000" />
+      <workItem from="1720878658673" duration="1285000" />
     </task>
     <servers />
   </component>
