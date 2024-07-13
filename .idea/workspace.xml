@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a9a66a5-c0d7-4ce0-8a01-fcba69f75371" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="9a9a66a5-c0d7-4ce0-8a01-fcba69f75371" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +37,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="PerforceDirect.Settings">
+    <option name="ENABLED" value="false" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -90,7 +90,7 @@
       <workItem from="1720696446636" duration="1341000" />
       <workItem from="1720708262439" duration="735000" />
       <workItem from="1720709066281" duration="77000" />
-      <workItem from="1720878658673" duration="1285000" />
+      <workItem from="1720878658673" duration="1637000" />
     </task>
     <servers />
   </component>
