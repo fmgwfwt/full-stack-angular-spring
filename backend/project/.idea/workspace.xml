@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d204f936-3bea-47a2-862c-1b0726e1d99b" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2iN2CpECOlWIHNxWsE8igIUrzD0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.docker-compose.yml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ProjectApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/job-page&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/harun/Desktop/full-stack-angular-spring-main/backend/project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Spring Boot.ProjectApplication">
+    <configuration name="ProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.project.ProjectApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="postgres" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d204f936-3bea-47a2-862c-1b0726e1d99b" name="Changes" comment="" />
+      <created>1719316590180</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719316590180</updated>
+      <workItem from="1719316591263" duration="83000" />
+      <workItem from="1719386345466" duration="11000" />
+      <workItem from="1719472509005" duration="14128000" />
+      <workItem from="1719556940967" duration="9899000" />
+      <workItem from="1719572927689" duration="16000" />
+      <workItem from="1719573064213" duration="4076000" />
+      <workItem from="1719669716477" duration="31000" />
+      <workItem from="1719671936712" duration="917000" />
+      <workItem from="1719728582633" duration="5293000" />
+      <workItem from="1719816382542" duration="10699000" />
+      <workItem from="1719831831065" duration="6120000" />
+      <workItem from="1719859683088" duration="1863000" />
+      <workItem from="1719903239074" duration="3395000" />
+      <workItem from="1719907398319" duration="8000" />
+      <workItem from="1719908248175" duration="1100000" />
+      <workItem from="1719909700000" duration="3984000" />
+      <workItem from="1719918079435" duration="6567000" />
+      <workItem from="1719990217324" duration="8193000" />
+      <workItem from="1720004700197" duration="6377000" />
+      <workItem from="1720076044169" duration="6764000" />
+      <workItem from="1720090352417" duration="3441000" />
+      <workItem from="1720097770011" duration="88000" />
+      <workItem from="1720161868375" duration="9580000" />
+      <workItem from="1720177016759" duration="2776000" />
+      <workItem from="1720257173990" duration="6292000" />
+      <workItem from="1720373764001" duration="1665000" />
+      <workItem from="1720375541673" duration="255000" />
+      <workItem from="1720375833899" duration="118000" />
+      <workItem from="1720376131123" duration="116000" />
+      <workItem from="1720376305573" duration="107000" />
+      <workItem from="1720376570825" duration="15000" />
+      <workItem from="1720377307915" duration="123000" />
+      <workItem from="1720377476492" duration="3195000" />
+      <workItem from="1720421529709" duration="8950000" />
+      <workItem from="1720436225984" duration="2575000" />
+      <workItem from="1720508126879" duration="7562000" />
+      <workItem from="1720522505877" duration="2493000" />
+      <workItem from="1720594808362" duration="8841000" />
+      <workItem from="1720608324882" duration="7484000" />
+      <workItem from="1720679845604" duration="241000" />
+      <workItem from="1720680413896" duration="20000" />
+      <workItem from="1720680581421" duration="21000" />
+      <workItem from="1720696308097" duration="17000" />
+      <workItem from="1720709578014" duration="35000" />
+      <workItem from="1720709625013" duration="12000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/project/auth/AuthController.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.1.2/spring-security-core-6.1.2.jar!/org/springframework/security/authentication/UsernamePasswordAuthenticationToken.class</url>
+          <line>31</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/project/security/jwt/AuthTokenFilter.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.1.2/spring-security-core-6.1.2.jar!/org/springframework/security/authentication/ProviderManager.class</url>
+          <line>62</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.1.2/spring-security-core-6.1.2.jar!/org/springframework/security/authentication/dao/DaoAuthenticationProvider.class</url>
+          <line>36</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.1.2/spring-security-core-6.1.2.jar!/org/springframework/security/authentication/dao/DaoAuthenticationProvider.class</url>
+          <line>41</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Employee_java$ProjectApplication.ic" NAME="ProjectApplication Coverage Results" MODIFIED="1719486487271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+  </component>
+</project>

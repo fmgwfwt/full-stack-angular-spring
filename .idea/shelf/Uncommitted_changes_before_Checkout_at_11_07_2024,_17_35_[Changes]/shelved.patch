@@ -1,0 +1,17 @@
+Index: frontend/src/environments/environment.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// The file contents for the current environment will overwrite these during build.\n// The build system defaults to the dev environment which uses `environment.ts`, but if you do\n// `ng build --env=prod` then `environment.prod.ts` will be used instead.\n// The list of which env maps to which file can be found in `.angular-cli.json`.\n\nexport const environment = {\n  production: false,\n  domain: 'http://fatihdemir.com:8080',\n};\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/frontend/src/environments/environment.ts b/frontend/src/environments/environment.ts
+--- a/frontend/src/environments/environment.ts	
++++ b/frontend/src/environments/environment.ts	
+@@ -5,5 +5,5 @@
+ 
+ export const environment = {
+   production: false,
+-  domain: 'http://fatihdemir.com:8080',
++  domain: 'http://localhost:8080',
+ };

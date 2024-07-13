@@ -10,9 +10,15 @@ import { AdminLayoutComponent } from './my-app/layouts/admin-layout/admin-layout
 import { LogoutComponent } from './my-app/logout/logout.component';
 import { UserListComponent } from './my-app/user-list/user-list.component';
 import { ConfirmationDialogComponent } from './my-app/companies/confirmation-dialog/confirmation-dialog.component';
+import { AddJobsComponent } from './my-app/jobs/add-jobs/add-jobs.component';
+import { UpdateJobsComponent } from './my-app/jobs/update-jobs/update-jobs.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatButtonModule} from "@angular/material/button";
+import { BrowserModule } from '@angular/platform-browser';
+import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+
 
 
 
@@ -28,7 +34,10 @@ import {MatButtonModule} from "@angular/material/button";
     AppRoutingModule,
     MatDialogModule,
     MatFormFieldModule,
-    MatButtonModule
+    MatButtonModule,
+    BrowserModule,
+    MatInputModule,
+    MatCheckboxModule
   ],
   declarations: [
     AppComponent,
@@ -36,6 +45,8 @@ import {MatButtonModule} from "@angular/material/button";
     LogoutComponent,
     UserListComponent,
     ConfirmationDialogComponent,
+    AddJobsComponent,
+    UpdateJobsComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

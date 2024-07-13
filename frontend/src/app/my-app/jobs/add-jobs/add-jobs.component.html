@@ -1,0 +1,75 @@
+<div class="main-content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-header card-header-danger">
+              <h4 class="card-title">Add Job</h4>
+              <p class="card-category"></p>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="col-md-12">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Company Id" type="number" [(ngModel)]="companyId" name="companyId">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-12">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Job Name" type="text" [(ngModel)]="jobName" name="jobName">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-12">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Job Description" type="text" [(ngModel)]="jobDescription" name="jobDescription">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-12">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Date of Post" type="date" [(ngModel)]="dateOfPost" name="dateOfPost">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-12">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Employment Type" type="number" [(ngModel)]="employmentType" name="employmentType">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-12">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Expertise Level" type="number" [(ngModel)]="expertiseLevel" name="expertiseLevel">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-12">
+                  <mat-checkbox [(ngModel)]="isRemote" name="isRemote">Remote</mat-checkbox>
+                </div>
+                <div class="col-md-12">
+                  <mat-checkbox [(ngModel)]="isSalaryDisclosed" name="isSalaryDisclosed">Salary Disclosed</mat-checkbox>
+                </div>
+                <div class="col-md-12">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Salary Info" type="text" [(ngModel)]="salaryInfo" name="salaryInfo">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-12">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Salary Min" type="number" [(ngModel)]="salaryMin" name="salaryMin">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-12">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Salary Max" type="number" [(ngModel)]="salaryMax" name="salaryMax">
+                  </mat-form-field>
+                </div>
+            
+                <div class="col-md-12">
+                  <button mat-raised-button type="submit" class="btn btn-danger pull-right" (click)="addJobs()">Add Job</button>
+                  <div class="clearfix"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  

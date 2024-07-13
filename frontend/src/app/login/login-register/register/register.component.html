@@ -79,8 +79,30 @@
       </div>
     </form>
 
+
+
+    <form
+    *ngIf="!isSuccessful"
+    name="form"
+    (ngSubmit)="f.form.valid && returnToLoginPage()"
+    #f="ngForm"
+    novalidate
+  >
+  <div class="form-group">
+    <button class="btn btn-primary btn-block">Return To login Page</button>
+  </div>
+</form>
+
     <div class="alert alert-success" *ngIf="isSuccessful">
       Your registration is successful!
+      <form>
+        <button mat-raised-button type="submit" class="btn pull-right returnToLoginPage" (click)="returnToLoginPage()">Return To Login Page </button>
+        <div class="clearfix"></div>
+    </form>
     </div>
+ 
+  
+
+
   </div>
 </div>

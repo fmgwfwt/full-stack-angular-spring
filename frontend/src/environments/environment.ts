@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  domain: 'http://fatihdemir.com:8080',
+  domain: 'http://localhost:8080',
 };

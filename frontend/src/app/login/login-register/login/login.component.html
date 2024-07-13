@@ -57,6 +57,7 @@
           Login
         </button>
       </div>
+      
       <div class="form-group">
         <div
           class="alert alert-danger"
@@ -67,6 +68,23 @@
         </div>
       </div>
     </form>
+   
+    <form
+    *ngIf="!isLoggedIn"
+    name="form"
+    (ngSubmit)="f.form.valid && goToSignUpPage()"
+    #f="ngForm"
+    novalidate
+  >
+  <div class="form-group">
+    <button class="btn btn-primary btn-block">
+      Go to Signup Page
+    </button>
+  </div>
+
+</form>
+
+
 
     <div class="alert alert-success" *ngIf="isLoggedIn">
       Logged in as {{ roles }}.

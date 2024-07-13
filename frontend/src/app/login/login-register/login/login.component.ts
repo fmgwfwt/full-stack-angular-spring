@@ -42,15 +42,25 @@ export class LoginComponent implements OnInit {
         this.isLoginFailed = false;
         this.isLoggedIn = true;
         this.roles = this.tokenStorage.getUser().roles;
-
-        // Navigate to the dashboard component
-        this.router.navigate(['/dashboard']); // Adjust the route path if needed
+        
+        if(this.tokenStorage.getUser().roles=="ROLE_ADMIN"){
+          this.router.navigate(['/dashboard']);
+        }
+        else if(this.tokenStorage.getUser().roles=="ROLE_USER"){
+          this.router.navigate(['/user-dashboard']);
+        }
+       
+        // Adjust the route path if needed
       },
       error: err => {
         this.errorMessage = err.error.message;
         this.isLoginFailed = true;
       }
     });
+  }
+
+  goToSignUpPage():void{
+  this.router.navigate(['signup'])
   }
 
   reloadPage(): void {

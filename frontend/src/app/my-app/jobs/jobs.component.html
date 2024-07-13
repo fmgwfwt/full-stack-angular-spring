@@ -1,1 +1,107 @@
-<p>jobs works!</p>
+<div class="main-content" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-danger">
+              <div class="header-content">
+                <h4 class="card-title">Jobs Table</h4>
+                <p class="card-category">Jobs List For Admin View</p>
+              </div>
+              <div class="button-container">
+                <button mat-raised-button
+                        type="button"
+                        matTooltip="Add Company"
+                        [matTooltipPosition]="'above'"
+                        class="btn btn-primary btn-link btn-sm btn-just-icon"
+                        (click)="addJobs()">
+                  <i class="material-icons">add</i>
+                </button>
+  
+  
+              </div>
+  
+              
+            </div>
+           
+            <div class="card-body">
+              <div class="mb-3"></div>
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class="text-primary">
+                    <th>ID</th>
+                    <th>Date of Post</th>
+                    <th>Employment Type</th>
+                    <th>Is Remote</th>
+                    <th>Is Salary Disclosed</th>
+                    <th>Job Description</th>
+                    <th>Job Name</th>
+                    <th>Salary Info</th>
+                    <th>Salary Max</th>
+                    <th>Salary Min</th>
+                    <th>Time Info</th>
+                    
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let job of pagedJobs; let i = index;">
+                      <td>{{ job.id }}</td>
+                      <td>{{ job.dateOfPost }}</td>
+                      <td>{{ job.employmentType }}</td>
+                      <td>{{ job.isRemote }}</td>
+                      <td>{{ job.isSalaryDisclosed }}</td>
+                      <td>{{ job.jobDescription }}</td>
+                      <td>{{ job.jobName }}</td>
+                      <td>{{ job.salaryInfo }}</td>
+                      <td>{{ job.salaryMax }}</td>
+                      <td>{{ job.salaryMin }}</td>
+                      <td>{{ job.timeInfo }}
+
+                      </td>
+                      <td>
+                        <button
+                                mat-raised-button
+                                type="button"
+                                matTooltip="Edit Jobs"
+                                [matTooltipPosition]="'above'"
+                                class="btn btn-primary btn-link btn-sm btn-just-icon"
+                                (click)="editJobs(job.id)">
+                          <i class="material-icons">edit</i>
+                        </button>
+                        <button mat-raised-button
+                                type="button"
+                                matTooltip="Remove"
+                                [matTooltipPosition]="'above'"
+                                class="btn btn-danger btn-link btn-sm btn-just-icon"
+                                (click)="openConfirmationDialog(i)">
+                          <i class="material-icons">close</i>
+                        </button>
+                      </td>
+                     
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+
+
+       
+
+
+
+
+
+
+          
+          <mat-paginator
+            [length]="totalItems"
+            [pageSize]="pageSize"
+            [pageSizeOptions]="[5, 10, 25, 50]"
+            (page)="onPageChange($event)"
+          ></mat-paginator>
+        </div>
+      </div>
+    </div>
+  </div>
+  
