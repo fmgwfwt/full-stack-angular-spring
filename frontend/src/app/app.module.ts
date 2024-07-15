@@ -18,7 +18,7 @@ import {MatButtonModule} from "@angular/material/button";
 import { BrowserModule } from '@angular/platform-browser';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 
@@ -37,7 +37,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatButtonModule,
     BrowserModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatPaginatorModule
   ],
   declarations: [
     AppComponent,
