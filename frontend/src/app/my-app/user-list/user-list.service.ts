@@ -49,12 +49,11 @@ export class UserListService {
         const headers = this.setupHeaders(); // Include the Bearer token in the headers
         return this.http.delete(url, { headers });
     }
-    editUsers(id: number, email:string,username:string): Observable<any> {
-        const url = `${this.baseUrl}/users/${id}`;
+    editUserRoles(id: number,role:string): Observable<any> {
+        const url = `${this.baseUrl}/users/roles/${id}`;
         const headers = this.setupHeaders();
         const updatedUserData = {
-           email,
-           username
+           role
         };
         console.log("evetttttttttt");
         console.log(updatedUserData);

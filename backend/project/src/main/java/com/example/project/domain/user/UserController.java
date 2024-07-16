@@ -39,10 +39,10 @@ public class UserController {
         return ResponseEntity.ok(roles);
     }
 
-    @PutMapping("/users/{userId}")
-    public ResponseEntity<User> updateUser(@PathVariable Long userId, @RequestBody User updatedUser) {
+    @PutMapping("/users/roles/{userId}")
+    public ResponseEntity<User> updateUserRole(@PathVariable Long userId, @RequestBody User updatedUser) {
         try {
-            User user = userService.updateUser(userId, updatedUser);
+            User user = userService.updateUserRole(userId, updatedUser);
             return ResponseEntity.ok(user);
         } catch (EntityNotFoundException e) {
             return ResponseEntity.notFound().build();

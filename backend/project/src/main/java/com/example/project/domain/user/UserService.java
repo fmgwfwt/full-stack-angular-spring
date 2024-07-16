@@ -36,7 +36,7 @@ public class UserService {
     }
 
 
-    public User updateUser(Long UserId, User UpdatedUser) {
+    public User updateUserRole(Long UserId, User UpdatedUser) {
 
         Optional<User> optionalUser = userRepository.findById(UserId);
         User existingUser = optionalUser.orElseThrow(() -> new EntityNotFoundException("User not found"));

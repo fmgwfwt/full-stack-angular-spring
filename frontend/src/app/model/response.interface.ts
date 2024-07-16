@@ -13,7 +13,7 @@ export interface Company {
     companySize: number;
 }
 export interface Jobs {
-    id:number;
+    id: number;
     dateOfPost: Date;
     employmentType: number;
     expertiseLevel: number;
@@ -29,12 +29,17 @@ export interface Jobs {
 }
 export interface UserList {
 
-id:number;
-email:string;
-username:string;
+    id: number;
+    email: string;
+    username: string;
+   
 
 
-
-
-    
 }
+export interface Role{
+
+id:number;
+name:string;
+}
+
+
