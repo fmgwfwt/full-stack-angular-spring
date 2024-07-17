@@ -21,8 +21,7 @@ export class UserListComponent implements OnInit {
     public currentPage: number = 1;
     public pagedUsers: UserList[] = [];
     public totalItems: number = 0;
-    roles:Role[]=[];
-    public pagedRoles:Role[]=[];
+
   constructor(private userListService: UserListService, private dialog: MatDialog, private router: Router) {}
 
   ngOnInit(): void {
@@ -37,16 +36,15 @@ export class UserListComponent implements OnInit {
                 this.totalItems = response.totalElements;
                 //this.updatePagedCompanies();
                 this.pagedUsers = this.users;
-                this.pagedRoles=this.roles;
             },
             error => {
                 console.error('Error fetching Users:', error);
             }
         );
     }
-    // editUsers(id: number): void {
-    //     this.router.navigate(['update-company', id]);
-    // }
+    editUsers(id:number): void {
+        this.router.navigate(['update-user-list',id]);
+    }
 
 
 

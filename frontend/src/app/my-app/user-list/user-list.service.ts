@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { catchError, Observable, tap } from 'rxjs';
 import { TokenStorageService } from "../../_services/token-storage.service";
-import {environment} from "../../../environments/environment";
-import {UserList, PageDto} from "../../model/response.interface";
+import { environment } from "../../../environments/environment";
+import { UserList, PageDto } from "../../model/response.interface";
+import { ideahub } from 'googleapis/build/src/apis/ideahub';
 
 @Injectable({
     providedIn: 'root'
@@ -12,7 +13,7 @@ export class UserListService {
     private baseUrl = environment.domain; // Base URL for your API
     private authToken = this.token.getToken(); // Replace with your actual token
 
-    constructor(private http: HttpClient, private token: TokenStorageService) {}
+    constructor(private http: HttpClient, private token: TokenStorageService) { }
 
     getUsers(page: number, pageSize: number): Observable<PageDto<UserList>> {
         const url = `${this.baseUrl}/users`;
@@ -49,11 +50,14 @@ export class UserListService {
         const headers = this.setupHeaders(); // Include the Bearer token in the headers
         return this.http.delete(url, { headers });
     }
-    editUserRoles(id: number,role:string): Observable<any> {
-        const url = `${this.baseUrl}/users/roles/${id}`;
+    editUser({ id, email, username }): Observable<any> {
+        const url = `${this.baseUrl}/users/${id}`;
         const headers = this.setupHeaders();
         const updatedUserData = {
-           role
+            email,
+            username,
+     
+            
         };
         console.log("evetttttttttt");
         console.log(updatedUserData);

@@ -32,8 +32,6 @@ export interface UserList {
     id: number;
     email: string;
     username: string;
-   
-
 
 }
 export interface Role{

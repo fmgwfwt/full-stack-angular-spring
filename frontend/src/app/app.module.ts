@@ -19,6 +19,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { UpdateUserListComponent } from './my-app/user-list/update-user-list/update-user-list.component';
 
 
 
@@ -47,7 +48,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     UserListComponent,
     ConfirmationDialogComponent,
     AddJobsComponent,
-    UpdateJobsComponent
+    UpdateJobsComponent,
+    UpdateUserListComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

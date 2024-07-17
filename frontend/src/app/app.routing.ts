@@ -11,6 +11,8 @@ import { UpdateJobsComponent } from './my-app/jobs/update-jobs/update-jobs.compo
 import { AddJobsComponent } from './my-app/jobs/add-jobs/add-jobs.component';
 import { RegisterComponent } from './login/login-register/register/register.component';
 import { UserDashboardComponent } from './my-app/dashboard/user-dashboard/user-dashboard.component';
+import { UserListComponent } from './my-app/user-list/user-list.component';
+import { UpdateUserListComponent } from './my-app/user-list/update-user-list/update-user-list.component';
 
 
 const routes: Routes =[
@@ -35,6 +37,9 @@ const routes: Routes =[
   { path: 'update-jobs/:id', component: UpdateJobsComponent }, 
   { path: 'signup', component: RegisterComponent }, 
   { path: 'user-dashboard', component: UserDashboardComponent }, 
+  { path: 'user-list', component: UserListComponent }, 
+  { path: 'update-user-list/:id', component: UpdateUserListComponent }, 
+
 ];
 
 @NgModule({
