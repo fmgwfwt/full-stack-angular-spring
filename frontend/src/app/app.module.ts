@@ -20,6 +20,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { UpdateUserListComponent } from './my-app/user-list/update-user-list/update-user-list.component';
+import {MatSelectModule} from '@angular/material/select';
 
 
 
@@ -39,7 +40,8 @@ import { UpdateUserListComponent } from './my-app/user-list/update-user-list/upd
     BrowserModule,
     MatInputModule,
     MatCheckboxModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatSelectModule
   ],
   declarations: [
     AppComponent,

@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59988543-a8b2-45e1-8db8-012e8b0dbf4e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/auth/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/auth/RoleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/domain/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/domain/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/domain/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/domain/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project/domain/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project/domain/user/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project/domain/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project/domain/user/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../frontend/src/app/app.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/src/app/app.routing.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../frontend/src/app/model/response.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/src/app/model/response.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../frontend/src/app/my-app/user-list/user-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/src/app/my-app/user-list/user-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../frontend/src/app/my-app/user-list/update-user-list/update-user-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/src/app/my-app/user-list/update-user-list/update-user-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../frontend/src/app/my-app/user-list/update-user-list/update-user-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/src/app/my-app/user-list/update-user-list/update-user-list.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../frontend/src/app/my-app/user-list/user-list.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/src/app/my-app/user-list/user-list.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,9 +19,20 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -33,28 +42,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ProjectApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/harun/Documents/GitHub/full-stack-angular-spring/backend/project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ProjectApplication.executor": "Run",
+    "git-widget-placeholder": "develop",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/harun/Documents/GitHub/full-stack-angular-spring/backend/project",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="ProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -105,7 +114,9 @@
       <workItem from="1721111245118" duration="9693000" />
       <workItem from="1721126676971" duration="3908000" />
       <workItem from="1721196903139" duration="11753000" />
-      <workItem from="1721213108341" duration="2966000" />
+      <workItem from="1721213108341" duration="3485000" />
+      <workItem from="1721283508857" duration="9373000" />
+      <workItem from="1721298266112" duration="4794000" />
     </task>
     <servers />
   </component>

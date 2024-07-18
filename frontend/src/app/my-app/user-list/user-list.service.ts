@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { catchError, Observable, tap } from 'rxjs';
 import { TokenStorageService } from "../../_services/token-storage.service";
 import { environment } from "../../../environments/environment";
-import { UserList, PageDto } from "../../model/response.interface";
+import { UserList, PageDto, Role } from "../../model/response.interface";
 import { ideahub } from 'googleapis/build/src/apis/ideahub';
 
 @Injectable({
@@ -50,12 +50,13 @@ export class UserListService {
         const headers = this.setupHeaders(); // Include the Bearer token in the headers
         return this.http.delete(url, { headers });
     }
-    editUser({ id, email, username }): Observable<any> {
+    editUser({ id, email, username ,roles}): Observable<any> {
         const url = `${this.baseUrl}/users/${id}`;
         const headers = this.setupHeaders();
         const updatedUserData = {
             email,
             username,
+            roles
      
             
         };
@@ -68,6 +69,25 @@ export class UserListService {
             })
         );
     }
+
+    getAvailableRoles(page: number, pageSize: number): Observable<PageDto<Role>> {
+        const url = `${this.baseUrl}/roles`;
+        const headers = this.setupHeaders();
+        page = page - 1;
+        // Construct the query parameters for pagination
+        const params = new HttpParams()
+            .set('page', page.toString())
+            .set('size', pageSize.toString());
+
+        return this.http.get<PageDto<Role>>(url, { headers, params }).pipe(
+            tap(data => console.log('Received data:', data)),
+            catchError(error => {
+                console.error('Error fetching Users:', error);
+                throw error;
+            })
+        );
+    }
+
 
     private setupHeaders(): HttpHeaders {
         return new HttpHeaders({
