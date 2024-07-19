@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59988543-a8b2-45e1-8db8-012e8b0dbf4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/auth/RoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/auth/RoleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../frontend/src/app/model/response.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/src/app/model/response.interface.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../frontend/src/app/my-app/user-list/update-user-list/update-user-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/src/app/my-app/user-list/update-user-list/update-user-list.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../frontend/src/app/my-app/user-list/update-user-list/update-user-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/src/app/my-app/user-list/update-user-list/update-user-list.component.ts" afterDir="false" />
@@ -29,10 +26,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -42,28 +39,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.ProjectApplication.executor": "Run",
-    "git-widget-placeholder": "develop",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/harun/Documents/GitHub/full-stack-angular-spring/backend/project",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ProjectApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/harun/Documents/GitHub/full-stack-angular-spring/backend/project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -116,7 +113,11 @@
       <workItem from="1721196903139" duration="11753000" />
       <workItem from="1721213108341" duration="3485000" />
       <workItem from="1721283508857" duration="9373000" />
-      <workItem from="1721298266112" duration="4794000" />
+      <workItem from="1721298266112" duration="4837000" />
+      <workItem from="1721324952715" duration="373000" />
+      <workItem from="1721325331809" duration="2000" />
+      <workItem from="1721369568703" duration="7644000" />
+      <workItem from="1721385063876" duration="1879000" />
     </task>
     <servers />
   </component>

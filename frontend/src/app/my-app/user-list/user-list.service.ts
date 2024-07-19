@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { catchError, Observable, tap } from 'rxjs';
 import { TokenStorageService } from "../../_services/token-storage.service";
 import { environment } from "../../../environments/environment";
-import { UserList, PageDto, Role } from "../../model/response.interface";
+import { UserList, PageDto, Role, RoleDto } from "../../model/response.interface";
 import { ideahub } from 'googleapis/build/src/apis/ideahub';
 
 @Injectable({
@@ -50,7 +50,7 @@ export class UserListService {
         const headers = this.setupHeaders(); // Include the Bearer token in the headers
         return this.http.delete(url, { headers });
     }
-    editUser({ id, email, username ,roles}): Observable<any> {
+    editUser({ id, email, username ,roles}): Observable<UserList> {
         const url = `${this.baseUrl}/users/${id}`;
         const headers = this.setupHeaders();
         const updatedUserData = {
@@ -62,7 +62,7 @@ export class UserListService {
         };
         console.log("evetttttttttt");
         console.log(updatedUserData);
-        return this.http.put(url, updatedUserData, { headers }).pipe(
+        return this.http.put<UserList>(url, updatedUserData, { headers }).pipe(
             catchError(error => {
                 console.error('Error updating Users:', error);
                 throw error; // Rethrow the error to be caught by the calling code
@@ -70,16 +70,10 @@ export class UserListService {
         );
     }
 
-    getAvailableRoles(page: number, pageSize: number): Observable<PageDto<Role>> {
+    getAvailableRoles(): Observable<RoleDto<Role>> {
         const url = `${this.baseUrl}/roles`;
         const headers = this.setupHeaders();
-        page = page - 1;
-        // Construct the query parameters for pagination
-        const params = new HttpParams()
-            .set('page', page.toString())
-            .set('size', pageSize.toString());
-
-        return this.http.get<PageDto<Role>>(url, { headers, params }).pipe(
+        return this.http.get<RoleDto<Role>>(url, { headers}).pipe(
             tap(data => console.log('Received data:', data)),
             catchError(error => {
                 console.error('Error fetching Users:', error);

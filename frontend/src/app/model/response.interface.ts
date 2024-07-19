@@ -32,9 +32,17 @@ export interface UserList {
     id: number;
     email: string;
     username: string;
-    roles:Array<String>;
+    roles: Role[];
 
 }
+
+
+
+export interface RoleDto<T>{
+content:T[];
+}
+
+
 export interface Role{
 
 id:number;
