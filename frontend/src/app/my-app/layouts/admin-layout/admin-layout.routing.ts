@@ -19,6 +19,9 @@ import {UserListComponent} from "../../user-list/user-list.component";
 import {AboutUsComponent} from "../../about-us/about-us.component";
 import {UpdateCompanyComponent} from "../../companies/update-company/update-company.component";
 import {AddCompanyComponent} from "../../companies/add-company/add-company.component";
+import { UpdateJobsComponent } from 'app/my-app/jobs/update-jobs/update-jobs.component';
+import { AddJobsComponent } from 'app/my-app/jobs/add-jobs/add-jobs.component';
+import { UpdateUserListComponent } from 'app/my-app/user-list/update-user-list/update-user-list.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -83,5 +86,11 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'user-list', component: UserListComponent},
     { path: 'about-us', component: AboutUsComponent},
     { path: 'update-company/:id', component: UpdateCompanyComponent },
+    { path: 'update-jobs/:id', component: UpdateJobsComponent }, 
     { path: 'add-company', component: AddCompanyComponent},
+    { path: 'add-jobs', component: AddJobsComponent },
+    { path: 'user-list', component: UserListComponent }, 
+    { path: 'update-user-list/:id', component: UpdateUserListComponent },
+     
+    
 ];

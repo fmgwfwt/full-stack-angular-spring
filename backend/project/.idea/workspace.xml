@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="59988543-a8b2-45e1-8db8-012e8b0dbf4e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../frontend/src/app/model/response.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/src/app/model/response.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../frontend/src/app/my-app/user-list/update-user-list/update-user-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/src/app/my-app/user-list/update-user-list/update-user-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../frontend/src/app/my-app/user-list/update-user-list/update-user-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/src/app/my-app/user-list/update-user-list/update-user-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../frontend/src/app/my-app/user-list/user-list.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/src/app/my-app/user-list/user-list.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +113,8 @@
       <workItem from="1721324952715" duration="373000" />
       <workItem from="1721325331809" duration="2000" />
       <workItem from="1721369568703" duration="7644000" />
-      <workItem from="1721385063876" duration="1879000" />
+      <workItem from="1721385063876" duration="2266000" />
+      <workItem from="1721453364763" duration="1422000" />
     </task>
     <servers />
   </component>
