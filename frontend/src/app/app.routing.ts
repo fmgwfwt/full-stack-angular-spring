@@ -26,9 +26,6 @@ const routes: Routes =[
     }]
   },
   { path: 'signup', component: RegisterComponent }, 
-
-
-
   { path: 'user-dashboard', component: UserDashboardComponent }, 
  
 

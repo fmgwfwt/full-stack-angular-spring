@@ -1,7 +1,9 @@
 package com.example.project.domain.job;
 
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -40,7 +42,10 @@ public class JobController {
     @PostMapping("/companies/{companyId}/jobs")
     public ResponseEntity<Job> createJob(
             @PathVariable Integer companyId,
-            @RequestBody Job newJob) {
+            @Valid @RequestBody Job newJob, BindingResult result) {
+        if(result.hasErrors()) {
+            return ResponseEntity.badRequest().build();
+        }
         // Perform any necessary validation or business logic before saving
         // For example, check if the newJob has all the required fields, etc.
 
@@ -53,7 +58,8 @@ public class JobController {
     @PutMapping("/jobs/{jobId}")
     public ResponseEntity<Job> updateJob(
             @PathVariable Integer jobId,
-            @RequestBody Job updatedJob
+            @RequestBody Job updatedJob,
+            BindingResult result
     ) {
         // Retrieve the existing company from the database
         Job existingJob = jobService.getJobById(jobId);

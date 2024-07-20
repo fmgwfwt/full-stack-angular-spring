@@ -3,6 +3,7 @@ package com.example.project.domain.job;
 import com.example.project.domain.company.Company;
 import com.example.project.domain.employee.Employee;
 import com.example.project.domain.company.CompanyRepository;
+import jakarta.persistence.EntityExistsException;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -60,7 +61,9 @@ public class JobService {
         // Check if a company with the same name already exists
             // Handle the case where the company already exists (e.g., return null or throw an exception)
             // For example, you can throw a custom exception like CompanyAlreadyExistsException
-            return null;
+
+        throw new EntityExistsException("Company with name " + newJob.getJobName() + " already exists");
+
     }
 
     @Transactional

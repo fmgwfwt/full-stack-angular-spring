@@ -22,7 +22,6 @@ export class UpdateUserListComponent {
   email: string = '';
   selectedRoles: Role[] = [];
   availableRoles: Role[] = [];
-  random: Role[] = [];
   public roleList: Role[] = [];
   public totalItems: number = 0;
   
@@ -53,11 +52,7 @@ export class UpdateUserListComponent {
 
 
   updateUser() {
-    // Get the updated User data from your form inputs
 
-    // if (!Array.isArray(this.selectedRoles)) {
-    //   this.selectedRoles = [this.selectedRoles];
-    // }
     console.log( 'type of selected roles',typeof(this.selectedRoles))
     this.userListService.editUser({
       id: this.id,

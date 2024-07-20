@@ -46,7 +46,7 @@ export class AddJobsComponent implements OnInit {
       timeInfo: this.timeInfo,
       
 
-    };
+    }
 
     const companyId:Company={
       id: this.companyId,
@@ -54,7 +54,7 @@ export class AddJobsComponent implements OnInit {
       companyLocation: '',
       companyLogoPath: '',
       companySize: 0
-    }
+    };
  
     this.jobsService.addJobs(newJob,companyId.id).subscribe(
       (response) => {
