@@ -62,7 +62,7 @@ public class JobService {
             // Handle the case where the company already exists (e.g., return null or throw an exception)
             // For example, you can throw a custom exception like CompanyAlreadyExistsException
 
-        throw new EntityExistsException("Company with name " + newJob.getJobName() + " already exists");
+        throw new EntityExistsException();
 
     }
 

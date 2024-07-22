@@ -47,16 +47,7 @@ export class AddJobsComponent implements OnInit {
       
 
     }
-
-    const companyId:Company={
-      id: this.companyId,
-      companyName: '',
-      companyLocation: '',
-      companyLogoPath: '',
-      companySize: 0
-    };
- 
-    this.jobsService.addJobs(newJob,companyId.id).subscribe(
+    this.jobsService.addJobs(newJob,this.companyId).subscribe(
       (response) => {
         console.log('Job added successfully', response);
         this.router.navigate(['/jobs']);

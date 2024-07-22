@@ -27,14 +27,25 @@
                 </div>
                 <div class="col-md-12">
                   <mat-form-field class="example-full-width">
-                    <input matInput placeholder="Employment Type" type="number" [(ngModel)]="employmentType" name="employmentType">
+                    <mat-select placeholder="Employment Type" [(ngModel)]="employmentType" [(value)]="employmentType">
+                      <mat-option [value]="0">0</mat-option>
+                      <mat-option [value]="1">1</mat-option>
+                      <mat-option [value]="2">2</mat-option>
+                    </mat-select>
                   </mat-form-field>
                 </div>
+  
                 <div class="col-md-12">
                   <mat-form-field class="example-full-width">
-                    <input matInput placeholder="Expertise Level" type="number" [(ngModel)]="expertiseLevel" name="expertiseLevel">
+                    <mat-select placeholder="Expertise Level" [(ngModel)]="expertiseLevel" [(value)]="expertiseLevel">
+                      <mat-option [value]="0">0</mat-option>
+                      <mat-option [value]="1">1</mat-option>
+                      <mat-option [value]="2">2</mat-option>
+                    </mat-select>
                   </mat-form-field>
                 </div>
+
+
                 <div class="col-md-12">
                   <mat-checkbox [(ngModel)]="isRemote" name="isRemote">Remote</mat-checkbox>
                 </div>
